@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daftar — PasarNusa</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body class="auth-page">
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Pasar<span>Nusa</span></a>
+      <div class="nav-actions">
+        <a href="masuk.html" class="btn-masuk">Masuk</a>
+        <a href="daftar.html" class="btn-daftar nav-active">Daftar</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="auth-main">
+
+    <div class="auth-panel-left daftar-panel">
+      <div class="auth-panel-content">
+        <div class="auth-panel-badge">✦ BERGABUNG SEKARANG</div>
+        <h2 class="auth-panel-title">Mulai<br>Perjalanan<br><em>Belanja</em><br>Kamu</h2>
+        <p class="auth-panel-sub">Daftarkan dirimu dan nikmati ribuan produk UMKM pilihan dari seluruh Indonesia.</p>
+        <div class="benefit-list">
+          <div class="benefit-item">
+            <span class="benefit-icon">🎁</span>
+            <span>Diskon 15% untuk pembelian pertama</span>
+          </div>
+          <div class="benefit-item">
+            <span class="benefit-icon">🚚</span>
+            <span>Gratis ongkir ke seluruh Indonesia</span>
+          </div>
+          <div class="benefit-item">
+            <span class="benefit-icon">🔒</span>
+            <span>Transaksi aman &amp; terlindungi</span>
+          </div>
+          <div class="benefit-item">
+            <span class="benefit-icon">⭐</span>
+            <span>Program poin &amp; reward eksklusif</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="auth-panel-right">
+      <div class="auth-form-box">
+        <div class="auth-form-header">
+          <a href="index.html" class="auth-logo">Pasar<span>Nusa</span></a>
+          <h1>Buat Akun Baru</h1>
+          <p class="auth-form-sub">Bergabung dan mulai belanja produk lokal!</p>
+        </div>
+
+        <!-- ROLE TABS -->
+        <div class="role-tabs">
+          <label class="role-tab">
+            <input type="radio" name="role" value="pembeli" checked />
+            <span class="role-tab-label">
+              <span class="role-icon">🛍</span>
+              Pembeli
+            </span>
+          </label>
+          <label class="role-tab">
+            <input type="radio" name="role" value="penjual" />
+            <span class="role-tab-label">
+              <span class="role-icon">🏪</span>
+              Penjual / UMKM
+            </span>
+          </label>
+        </div>
+
+        <form class="auth-form" action="#" method="POST">
+          <input type="hidden" name="role" value="pembeli" />
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nama">Nama Depan</label>
+              <div class="input-wrap">
+                <span class="input-icon">👤</span>
+                <input type="text" id="nama" name="nama" placeholder="Nama depan" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="nama_belakang">Nama Belakang</label>
+              <div class="input-wrap">
+                <span class="input-icon">👤</span>
+                <input type="text" id="nama_belakang" name="nama_belakang" placeholder="Nama belakang" />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="reg_email">Alamat Email</label>
+            <div class="input-wrap">
+              <span class="input-icon">✉</span>
+              <input type="email" id="reg_email" name="email" placeholder="contoh@email.com" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="no_hp">Nomor HP / WhatsApp</label>
+            <div class="input-wrap">
+              <span class="input-icon">📱</span>
+              <input type="tel" id="no_hp" name="no_hp" placeholder="08xx-xxxx-xxxx" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="reg_password">Password</label>
+            <div class="input-wrap">
+              <span class="input-icon">🔒</span>
+              <input type="password" id="reg_password" name="password" placeholder="Minimal 8 karakter" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="konfirmasi_password">Konfirmasi Password</label>
+            <div class="input-wrap">
+              <span class="input-icon">🔒</span>
+              <input type="password" id="konfirmasi_password" name="konfirmasi_password" placeholder="Ulangi password" required />
+            </div>
+          </div>
+
+          <div class="form-check">
+            <label class="check-label">
+              <input type="checkbox" name="setuju" required />
+              <span class="check-box"></span>
+              Saya setuju dengan <a href="#">Syarat &amp; Ketentuan</a> dan <a href="#">Kebijakan Privasi</a>
+            </label>
+          </div>
+
+          <button type="submit" class="btn-auth-submit">Daftar Sekarang →</button>
+
+          <div class="auth-divider"><span>atau daftar dengan</span></div>
+
+          <div class="auth-social">
+            <a href="#" class="btn-social"><span class="social-icon google">G</span> Google</a>
+            <a href="#" class="btn-social"><span class="social-icon fb">f</span> Facebook</a>
+          </div>
+
+          <p class="auth-switch">Sudah punya akun? <a href="masuk.html">Masuk →</a></p>
+        </form>
+      </div>
+    </div>
+
+  </main>
+</body>
+</html>
