@@ -10,9 +10,9 @@
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar" id="navbar">
+  <nav class="navbar">
     <div class="nav-container">
-      <a href="#" class="logo">Pasar<span>Nusa</span></a>
+      <a href="index.html" class="logo">Pasar<span>Nusa</span></a>
       <ul class="nav-links">
         <li><a href="#jelajahi">Jelajahi</a></li>
         <li><a href="#kategori">Kategori</a></li>
@@ -20,11 +20,9 @@
         <li><a href="#blog">Blog</a></li>
       </ul>
       <div class="nav-actions">
-        <button class="btn-masuk" id="btnMasuk">Masuk</button>
-        <button class="btn-daftar" id="btnDaftar">Daftar</button>
-        <button class="btn-cart" id="btnCart">
-          🛒 <span class="cart-badge" id="cartBadge">0</span>
-        </button>
+        <a href="masuk.html" class="btn-masuk">Masuk</a>
+        <a href="daftar.html" class="btn-daftar">Daftar</a>
+        <a href="checkout.html" class="btn-cart">🛒 <span class="cart-badge">3</span></a>
       </div>
     </div>
   </nav>
@@ -46,7 +44,7 @@
   </div>
 
   <!-- HERO -->
-  <section class="hero" id="hero">
+  <section class="hero" id="jelajahi">
     <div class="hero-content">
       <p class="hero-label">— MARKETPLACE TERPERCAYA INDONESIA</p>
       <h1 class="hero-title">
@@ -59,7 +57,7 @@
       </div>
     </div>
     <div class="hero-cards">
-      <div class="hero-card card-float" data-delay="0">
+      <div class="hero-card anim-float-1">
         <span class="badge badge-terlaris">TERLARIS</span>
         <div class="card-img">🏺</div>
         <div class="card-info">
@@ -67,18 +65,18 @@
           <p class="card-seller">Pengrajin Sasak</p>
           <p class="card-price">Rp 185.000</p>
         </div>
-        <button class="btn-add-cart" onclick="addToCart('Gerabah Lombok', 185000)">+ Keranjang</button>
+        <a href="checkout.html" class="btn-add-cart">+ Keranjang</a>
       </div>
-      <div class="hero-card card-float" data-delay="200">
+      <div class="hero-card anim-float-2">
         <div class="card-img">👗</div>
         <div class="card-info">
           <p class="card-name">Batik Tulis Solo</p>
           <p class="card-seller">Batik Laras</p>
           <p class="card-price">Rp 420.000</p>
         </div>
-        <button class="btn-add-cart" onclick="addToCart('Batik Tulis Solo', 420000)">+ Keranjang</button>
+        <a href="checkout.html" class="btn-add-cart">+ Keranjang</a>
       </div>
-      <div class="hero-card card-float" data-delay="400">
+      <div class="hero-card anim-float-3">
         <span class="badge badge-baru">BARU</span>
         <div class="card-img">🍃</div>
         <div class="card-info">
@@ -86,161 +84,172 @@
           <p class="card-seller">Herbal Nusantara</p>
           <p class="card-price">Rp 95.000</p>
         </div>
-        <button class="btn-add-cart" onclick="addToCart('Teh Herbal Jawa', 95000)">+ Keranjang</button>
+        <a href="checkout.html" class="btn-add-cart">+ Keranjang</a>
       </div>
     </div>
   </section>
 
   <!-- KATEGORI -->
   <section class="kategori-section" id="kategori">
-    <div class="section-header">
-      <div>
+    <div class="inner">
+      <div class="section-header">
         <h2 class="section-title">Jelajahi<br><em>Kategori</em></h2>
+        <a href="#produk" class="lihat-semua">LIHAT SEMUA →</a>
       </div>
-      <a href="#" class="lihat-semua">LIHAT SEMUA →</a>
-    </div>
-    <div class="kategori-grid">
-      <div class="kat-card" onclick="filterCategory('kerajinan')">
-        <div class="kat-icon">🏺</div>
-        <p class="kat-name">Kerajinan Tangan</p>
-        <p class="kat-count">3.200+ produk</p>
-      </div>
-      <div class="kat-card" onclick="filterCategory('fashion')">
-        <div class="kat-icon">👗</div>
-        <p class="kat-name">Fashion & Tekstil</p>
-        <p class="kat-count">8.400+ produk</p>
-      </div>
-      <div class="kat-card" onclick="filterCategory('kuliner')">
-        <div class="kat-icon">🍜</div>
-        <p class="kat-name">Kuliner & Camilan</p>
-        <p class="kat-count">5.100+ produk</p>
-      </div>
-      <div class="kat-card" onclick="filterCategory('kecantikan')">
-        <div class="kat-icon">🌿</div>
-        <p class="kat-name">Kecantikan Alami</p>
-        <p class="kat-count">2.800+ produk</p>
+      <div class="kategori-grid">
+        <a href="#produk" class="kat-card">
+          <div class="kat-icon">🏺</div>
+          <p class="kat-name">Kerajinan Tangan</p>
+          <p class="kat-count">3.200+ produk</p>
+        </a>
+        <a href="#produk" class="kat-card">
+          <div class="kat-icon">👗</div>
+          <p class="kat-name">Fashion &amp; Tekstil</p>
+          <p class="kat-count">8.400+ produk</p>
+        </a>
+        <a href="#produk" class="kat-card">
+          <div class="kat-icon">🍜</div>
+          <p class="kat-name">Kuliner &amp; Camilan</p>
+          <p class="kat-count">5.100+ produk</p>
+        </a>
+        <a href="#produk" class="kat-card">
+          <div class="kat-icon">🌿</div>
+          <p class="kat-name">Kecantikan Alami</p>
+          <p class="kat-count">2.800+ produk</p>
+        </a>
       </div>
     </div>
   </section>
 
   <!-- PRODUK UNGGULAN -->
   <section class="produk-section" id="produk">
-    <div class="section-header">
-      <h2 class="section-title">Produk<br><em>Unggulan</em></h2>
-      <a href="#" class="lihat-semua">SEMUA PRODUK →</a>
-    </div>
-    <div class="produk-grid" id="produkGrid">
-      <div class="produk-card" data-cat="fashion">
-        <div class="produk-img" style="background:#f0ebe3;">🧵</div>
-        <div class="produk-info">
-          <span class="produk-cat">FASHION</span>
-          <p class="produk-name">Tenun Ikat NTT</p>
-          <p class="produk-seller">oleh Mama Teno Studio</p>
-          <div class="produk-footer">
-            <div>
-              <p class="produk-price">Rp 380.000</p>
-              <p class="produk-stars">★★★★★ (124)</p>
-            </div>
-            <button class="btn-plus" onclick="addToCart('Tenun Ikat NTT', 380000)">+</button>
-          </div>
-        </div>
+    <div class="inner">
+      <div class="section-header">
+        <h2 class="section-title">Produk<br><em>Unggulan</em></h2>
+        <a href="#" class="lihat-semua">SEMUA PRODUK →</a>
       </div>
-      <div class="produk-card" data-cat="kuliner">
-        <div class="produk-img" style="background:#e8f0eb;">🫙</div>
-        <div class="produk-info">
-          <span class="produk-cat">KULINER</span>
-          <p class="produk-name">Sambal Matah Bali</p>
-          <p class="produk-seller">oleh Dapur Ni Putu</p>
-          <div class="produk-footer">
-            <div>
-              <p class="produk-price">Rp 48.000</p>
-              <p class="produk-stars">★★★★★ (312)</p>
+      <div class="produk-grid">
+
+        <div class="produk-card">
+          <div class="produk-img" style="background:#f0ebe3;">🧵</div>
+          <div class="produk-info">
+            <span class="produk-cat">FASHION</span>
+            <p class="produk-name">Tenun Ikat NTT</p>
+            <p class="produk-seller">oleh Mama Teno Studio</p>
+            <div class="produk-footer">
+              <div>
+                <p class="produk-price">Rp 380.000</p>
+                <p class="produk-stars">★★★★★ (124)</p>
+              </div>
+              <a href="checkout.html" class="btn-plus">+</a>
             </div>
-            <button class="btn-plus" onclick="addToCart('Sambal Matah Bali', 48000)">+</button>
           </div>
         </div>
-      </div>
-      <div class="produk-card" data-cat="kerajinan">
-        <div class="produk-img" style="background:#ede8e3;">🪑</div>
-        <div class="produk-info">
-          <span class="produk-cat">KERAJINAN</span>
-          <p class="produk-name">Kursi Rotan Anyam</p>
-          <p class="produk-seller">oleh Rattan Nusantara</p>
-          <div class="produk-footer">
-            <div>
-              <p class="produk-price">Rp 1.250.000</p>
-              <p class="produk-stars">★★★★☆ (58)</p>
+
+        <div class="produk-card">
+          <div class="produk-img" style="background:#e8f0eb;">🫙</div>
+          <div class="produk-info">
+            <span class="produk-cat">KULINER</span>
+            <p class="produk-name">Sambal Matah Bali</p>
+            <p class="produk-seller">oleh Dapur Ni Putu</p>
+            <div class="produk-footer">
+              <div>
+                <p class="produk-price">Rp 48.000</p>
+                <p class="produk-stars">★★★★★ (312)</p>
+              </div>
+              <a href="checkout.html" class="btn-plus">+</a>
             </div>
-            <button class="btn-plus" onclick="addToCart('Kursi Rotan Anyam', 1250000)">+</button>
           </div>
         </div>
-      </div>
-      <div class="produk-card" data-cat="kecantikan">
-        <div class="produk-img" style="background:#f5eee8;">🌺</div>
-        <div class="produk-info">
-          <span class="produk-cat">KECANTIKAN</span>
-          <p class="produk-name">Lulur Kunyit Jawa</p>
-          <p class="produk-seller">oleh Spa Ayu Bali</p>
-          <div class="produk-footer">
-            <div>
-              <p class="produk-price">Rp 75.000</p>
-              <p class="produk-stars">★★★★★ (201)</p>
+
+        <div class="produk-card">
+          <div class="produk-img" style="background:#ede8e3;">🪑</div>
+          <div class="produk-info">
+            <span class="produk-cat">KERAJINAN</span>
+            <p class="produk-name">Kursi Rotan Anyam</p>
+            <p class="produk-seller">oleh Rattan Nusantara</p>
+            <div class="produk-footer">
+              <div>
+                <p class="produk-price">Rp 1.250.000</p>
+                <p class="produk-stars">★★★★☆ (58)</p>
+              </div>
+              <a href="checkout.html" class="btn-plus">+</a>
             </div>
-            <button class="btn-plus" onclick="addToCart('Lulur Kunyit Jawa', 75000)">+</button>
           </div>
         </div>
-      </div>
-      <div class="produk-card" data-cat="kerajinan">
-        <div class="produk-img" style="background:#e8ebe8;">🏺</div>
-        <div class="produk-info">
-          <span class="produk-cat">KERAJINAN</span>
-          <p class="produk-name">Gerabah Lombok</p>
-          <p class="produk-seller">oleh Pengrajin Sasak</p>
-          <div class="produk-footer">
-            <div>
-              <p class="produk-price">Rp 185.000</p>
-              <p class="produk-stars">★★★★★ (89)</p>
+
+        <div class="produk-card">
+          <div class="produk-img" style="background:#f5eee8;">🌺</div>
+          <div class="produk-info">
+            <span class="produk-cat">KECANTIKAN</span>
+            <p class="produk-name">Lulur Kunyit Jawa</p>
+            <p class="produk-seller">oleh Spa Ayu Bali</p>
+            <div class="produk-footer">
+              <div>
+                <p class="produk-price">Rp 75.000</p>
+                <p class="produk-stars">★★★★★ (201)</p>
+              </div>
+              <a href="checkout.html" class="btn-plus">+</a>
             </div>
-            <button class="btn-plus" onclick="addToCart('Gerabah Lombok', 185000)">+</button>
           </div>
         </div>
-      </div>
-      <div class="produk-card" data-cat="fashion">
-        <div class="produk-img" style="background:#eae5f0;">👗</div>
-        <div class="produk-info">
-          <span class="produk-cat">FASHION</span>
-          <p class="produk-name">Batik Tulis Solo</p>
-          <p class="produk-seller">oleh Batik Laras</p>
-          <div class="produk-footer">
-            <div>
-              <p class="produk-price">Rp 420.000</p>
-              <p class="produk-stars">★★★★★ (176)</p>
+
+        <div class="produk-card">
+          <div class="produk-img" style="background:#e8ebe8;">🏺</div>
+          <div class="produk-info">
+            <span class="produk-cat">KERAJINAN</span>
+            <p class="produk-name">Gerabah Lombok</p>
+            <p class="produk-seller">oleh Pengrajin Sasak</p>
+            <div class="produk-footer">
+              <div>
+                <p class="produk-price">Rp 185.000</p>
+                <p class="produk-stars">★★★★★ (89)</p>
+              </div>
+              <a href="checkout.html" class="btn-plus">+</a>
             </div>
-            <button class="btn-plus" onclick="addToCart('Batik Tulis Solo', 420000)">+</button>
           </div>
         </div>
+
+        <div class="produk-card">
+          <div class="produk-img" style="background:#eae5f0;">👗</div>
+          <div class="produk-info">
+            <span class="produk-cat">FASHION</span>
+            <p class="produk-name">Batik Tulis Solo</p>
+            <p class="produk-seller">oleh Batik Laras</p>
+            <div class="produk-footer">
+              <div>
+                <p class="produk-price">Rp 420.000</p>
+                <p class="produk-stars">★★★★★ (176)</p>
+              </div>
+              <a href="checkout.html" class="btn-plus">+</a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
   <!-- PROMO BANNER -->
-  <section class="promo-banner">
-    <div class="promo-content">
-      <p class="promo-label">Penawaran Spesial Hari Ini</p>
-      <h2 class="promo-title">Belanja Lebih,<br>Hemat Lebih <em>Banyak</em></h2>
-      <p class="promo-desc">Gratis ongkir ke seluruh Indonesia + diskon ekstra untuk pembelian pertama kamu. Berlaku hingga akhir bulan ini.</p>
-      <button class="btn-klaim">Klaim Sekarang →</button>
-    </div>
-    <div class="promo-badge">
-      <div class="badge-circle">
-        <p class="badge-persen">15%</p>
-        <p class="badge-text">DISKON EKSTRA</p>
+  <section class="promo-banner" id="penjual">
+    <div class="inner promo-inner">
+      <div class="promo-content">
+        <p class="promo-label">Penawaran Spesial Hari Ini</p>
+        <h2 class="promo-title">Belanja Lebih,<br>Hemat Lebih <em>Banyak</em></h2>
+        <p class="promo-desc">Gratis ongkir ke seluruh Indonesia + diskon ekstra untuk pembelian pertama kamu. Berlaku hingga akhir bulan ini.</p>
+        <a href="checkout.html" class="btn-klaim">Klaim Sekarang →</a>
+      </div>
+      <div class="promo-badge-wrap">
+        <div class="badge-circle">
+          <p class="badge-persen">15%</p>
+          <p class="badge-text">DISKON EKSTRA</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer">
+  <footer class="footer" id="blog">
     <div class="footer-container">
       <div class="footer-brand">
         <p class="footer-logo">Pasar<span>Nusa</span></p>
@@ -282,122 +291,5 @@
     </div>
   </footer>
 
-  <!-- MODAL: LOGIN -->
-  <div class="modal-overlay" id="modalLogin">
-    <div class="modal">
-      <button class="modal-close" onclick="closeModal('modalLogin')">✕</button>
-      <div class="modal-header">
-        <p class="modal-logo">Pasar<span>Nusa</span></p>
-        <h2>Selamat Datang!</h2>
-        <p class="modal-sub">Masuk ke akun kamu</p>
-      </div>
-      <div class="modal-body">
-        <div class="input-group">
-          <label>Email</label>
-          <input type="email" placeholder="email@kamu.com" id="loginEmail" />
-        </div>
-        <div class="input-group">
-          <label>Password</label>
-          <input type="password" placeholder="••••••••" id="loginPass" />
-        </div>
-        <button class="btn-modal-submit" onclick="handleLogin()">Masuk</button>
-        <p class="modal-switch">Belum punya akun? <a onclick="switchModal('modalLogin','modalDaftar')">Daftar sekarang</a></p>
-      </div>
-    </div>
-  </div>
-
-  <!-- MODAL: DAFTAR -->
-  <div class="modal-overlay" id="modalDaftar">
-    <div class="modal">
-      <button class="modal-close" onclick="closeModal('modalDaftar')">✕</button>
-      <div class="modal-header">
-        <p class="modal-logo">Pasar<span>Nusa</span></p>
-        <h2>Buat Akun Baru</h2>
-        <p class="modal-sub">Bergabung dan mulai belanja!</p>
-      </div>
-      <div class="modal-body">
-        <div class="input-group">
-          <label>Nama Lengkap</label>
-          <input type="text" placeholder="Nama kamu" id="regNama" />
-        </div>
-        <div class="input-group">
-          <label>Email</label>
-          <input type="email" placeholder="email@kamu.com" id="regEmail" />
-        </div>
-        <div class="input-group">
-          <label>Password</label>
-          <input type="password" placeholder="Min. 8 karakter" id="regPass" />
-        </div>
-        <div class="input-group">
-          <label>Role</label>
-          <select id="regRole">
-            <option value="pembeli">Pembeli</option>
-            <option value="penjual">Penjual / UMKM</option>
-          </select>
-        </div>
-        <button class="btn-modal-submit" onclick="handleDaftar()">Daftar Sekarang</button>
-        <p class="modal-switch">Sudah punya akun? <a onclick="switchModal('modalDaftar','modalLogin')">Masuk</a></p>
-      </div>
-    </div>
-  </div>
-
-  <!-- MODAL: CHECKOUT -->
-  <div class="modal-overlay" id="modalCheckout">
-    <div class="modal modal-wide">
-      <button class="modal-close" onclick="closeModal('modalCheckout')">✕</button>
-      <div class="modal-header">
-        <h2>🛒 Keranjang Belanja</h2>
-        <p class="modal-sub">Periksa pesanan kamu sebelum checkout</p>
-      </div>
-      <div class="modal-body">
-        <div id="cartItems" class="cart-items"></div>
-        <div class="cart-summary" id="cartSummary"></div>
-        <div class="checkout-form" id="checkoutForm" style="display:none;">
-          <h3>Data Pengiriman</h3>
-          <div class="input-group">
-            <label>Nama Penerima</label>
-            <input type="text" placeholder="Nama lengkap" />
-          </div>
-          <div class="input-group">
-            <label>Nomor HP</label>
-            <input type="text" placeholder="08xx-xxxx-xxxx" />
-          </div>
-          <div class="input-group">
-            <label>Alamat Lengkap</label>
-            <textarea placeholder="Jalan, No. Rumah, RT/RW, Kelurahan, Kecamatan..."></textarea>
-          </div>
-          <div class="input-row">
-            <div class="input-group">
-              <label>Kota</label>
-              <input type="text" placeholder="Kota" />
-            </div>
-            <div class="input-group">
-              <label>Kode Pos</label>
-              <input type="text" placeholder="12345" />
-            </div>
-          </div>
-          <div class="input-group">
-            <label>Metode Pembayaran</label>
-            <select>
-              <option>Transfer Bank (BCA)</option>
-              <option>Transfer Bank (Mandiri)</option>
-              <option>QRIS</option>
-              <option>COD (Bayar di Tempat)</option>
-              <option>Dompet Digital (GoPay/OVO)</option>
-            </select>
-          </div>
-        </div>
-        <div class="cart-actions">
-          <button class="btn-ghost-sm" onclick="closeModal('modalCheckout')">Lanjut Belanja</button>
-          <button class="btn-primary-sm" id="btnCheckoutNext" onclick="proceedCheckout()">Lanjut ke Pengiriman →</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- TOAST -->
-  <div class="toast" id="toast"></div>
-
-  <script src="script.js"></script>
 </body>
 </html>
