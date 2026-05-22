@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Masuk — PasarNusa</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body class="auth-page">
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="Home.php" class="logo">Pasar<span>Nusa</span></a>
+      <div class="nav-actions">
+        <a href="masuk.php" class="btn-masuk nav-active">Masuk</a>
+        <a href="Daftarrrr.html" class="btn-daftar">Daftar</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="auth-main">
+
+    <div class="auth-panel-left">
+      <div class="auth-panel-content">
+        <div class="auth-panel-badge">✦ MARKETPLACE UMKM LOKAL</div>
+        <h2 class="auth-panel-title">Belanja Produk<br><em>Asli Nusantara</em></h2>
+        <p class="auth-panel-sub">Bergabung bersama ribuan pembeli yang sudah mempercayai PasarNusa untuk mendukung pengrajin lokal terbaik.</p>
+        <div class="auth-panel-stats">
+          <div class="auth-stat">
+            <p class="auth-stat-num">19.500+</p>
+            <p class="auth-stat-label">Produk Aktif</p>
+          </div>
+          <div class="auth-stat">
+            <p class="auth-stat-num">4.200+</p>
+            <p class="auth-stat-label">Penjual UMKM</p>
+          </div>
+          <div class="auth-stat">
+            <p class="auth-stat-num">98%</p>
+            <p class="auth-stat-label">Kepuasan Pembeli</p>
+          </div>
+        </div>
+        <div class="auth-panel-deco">
+          <span>🏺</span><span>👗</span><span>🍜</span><span>🌿</span><span>🧵</span><span>🪑</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="auth-panel-right">
+      <div class="auth-form-box">
+        <div class="auth-form-header">
+          <a href="Home.php" class="auth-logo">Pasar<span>Nusa</span></a>
+          <h1>Selamat Datang!</h1>
+          <p class="auth-form-sub">Masuk untuk melanjutkan belanja</p>
+        </div>
+
+        <form class="auth-form" action="proses_masuk.php" method="POST">
+          <div class="form-group">
+            <label for="email">Alamat Email</label>
+            <div class="input-wrap">
+              <span class="input-icon">✉</span>
+              <input type="email" id="email" name="email" placeholder="contoh@email.com" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="password">
+              password
+            </label>
+            <div class="input-wrap">
+              <span class="input-icon">🔒</span>
+              <input type="password" id="password" name="password" placeholder="Masukkan password" required />
+            </div>
+          </div>
+
+          <button type="submit" class="btn-auth-submit">Masuk ke Akun</button>
+
+          <div class="auth-divider"><span>atau masuk dengan</span></div>
+
+          <div class="auth-social">
+            <a href="#" class="btn-social"><span class="social-icon google">G</span> Google</a>
+            <a href="#" class="btn-social"><span class="social-icon fb">f</span> Facebook</a>
+          </div>
+
+          <p class="auth-switch">Belum punya akun? <a href="Daftarrrr.html">Daftar Sekarang →</a></p>
+        </form>
+      </div>
+    </div>
+
+  </main>
+</body>
+</html>
